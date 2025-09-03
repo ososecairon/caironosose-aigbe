@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>my persoal website</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      color: white;
+    }
+
+    /* Fixed navbar */
+    nav {
+      width: 100%;
+      background: blue;
+      position: fixed;
+      text-align: right;
+      top: 0;
+      left: 0;
+      padding: 10px 0;
+      z-index: 2;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: yellow;
+    }
+
+    /* Landing section */
+    .landing {
+      margin-top: 50px; /* space for the navbar */
+      position: relative;
+      height: calc(100vh - 50px);
+      overflow: hidden;
+    }
+
+    .landing img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Slider text */
+    .slider {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: blue;
+      padding: 15px 25px;
+      border-radius: 10px;
+      font-size: 24px;
+    }
+
+    /* Content sections */
+    section {
+      padding: 60px 20px;
+      min-height: 100vh;
+      color: black;
+    }
+
+    #about {
+      background: #f0f0f0;
+    }
+
+    #portfolio {
+      background: #ddd;
+    }
+
+    #contact {
+      background: #bbb;
+    }
+
+        /* Footer */
+    footer {
+      background: blue;
+      padding: 20px;
+      color: #ccc;
+      font-size: 14px;
+    }
+
+  </style>
+
+</head>
+<body>
+	<!--navbar-->
+	<nav>
+		<a href="#home">Home</a>	
+		<a href="#about">About</a>
+		<a href="#portfolio">Portfolio</a>
+		<a href="#contact">Contact</a>
+	</nav> 
+	
+	<!--landing	section-->
+	<div class="landing" id="home">
+		<img src="sis.jpg" alt="my picture">
+		<div class="slider" id="sliderTest">welcome to my learning world!</div>
+	</div>
+	
+	<!--About section-->
+	<section id="about">
+		<h2>About Me<h2>
+		<p>Hello! my name is cairon aigbe...
+		this is one of my project work</p>
+	</section>
+
+	<!--portfolio section-->
+	<section id="portfolio">
+		<h2>my portfolio page</h2>
+		<p>Here are some of the projects i am woking on</p>
+		<ul style="list-style:none; padding:0;">
+			<li>my first website</li>
+			<li>A simple portfolio page</li>
+			<li>fun school project: coming soon</li>
+		</ul>
+    pppppppppppppppppppppppppppppppppp
+	</section>
+
+	<!--contact-->
+	<section id="contact">
+	<h2>contact me</h2>
+	<p>if you like to reach me, here is my email:</p>
+	<p><strong>osose.cairon@gmail.com</strong></p>
+  </section>
+
+	<!--footer-->
+	<footer>
+		&copy: Cairon Osose @2025.
+	</footer>
+
+	<script>
+    const sentences = [
+      "Welcome to my learning world!",
+      "I'm a Year 8 student.",
+      "This is my learning journey.",
+      "Check out my projects!"
+    ];
+ let index = 0;
+    const slider = document.getElementById("sliderText");
+
+    setInterval(() => {
+      index = (index + 1) % sentences.length;
+      slider.textContent = sentences[index];
+    }, 3000);
+  </script>
+</body>
+</html>	 	
